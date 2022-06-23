@@ -28,17 +28,30 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
  1 - definisco delle variabili globali, il plurale è dovuto al fatto che nel momento in cui le stamperò in pagina aumenteranno
  2 - commento una variabile let x vuota '' per poterla stampare dopo in pagina
  3 - costruisto con il for la mia sequenza di numeri da 1 a 100 stampata in console
- 4 - cerco di capire come modificare i multipli/divisori. al momento credo che una determinante sia che x/y=z e non z.numeri 
+ 4 - cerco di capire come modificare i multipli/divisori. al momento credo che una determinante sia che x/y=z e non z.numeri con modulo =0 quindi
  5 - verosimilmente qualcosa come un if e un else if annidati nel for che mi dica quando la divisione dei miei altri valori sia un numero intero, allora lo chiamerò fizz/buzz/fizzbuzz
  6 - posso in alternativa creare una variabile i che segua i multipli di tre? 
- 7 - in mezzo a questi andrò a controllare la lazione :) sarà una lunga giornata :')
+ 7 - in mezzo a questi punti andrò a controllare la lazione :) sarà una lunga giornata :')
   
  */
 
 const numbers = 'sequenza numeri da 1 a 100'; //in realtà non ne avrei bisogno per stampare in pagina
 
+const nOnTree = parseInt(3)
+console.log(nOnTree)
 // let myNumber = '';
 
+//provo a costruirmi una variabile che contenga i divisori di 100 per 3 e per 5
+
+//const dividingThree = for (let i = 1;  ){
+
+//}
+
 for (let i = 1; i <= 100; i++) {
-    console.log(i)
+    let j = 3;
+
+
+    if (i % j == 0); {
+        console.log('fizz')
+    }
 }
