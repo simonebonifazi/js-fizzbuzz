@@ -17,3 +17,28 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 
 
 */
+
+/*
+ percorso logico:
+ per scrivere questo codice mi avvalgo in priimo luogo di js, per questo parto da qui anzichè dalla grafica come l'ultimo esercizio.
+ in primo luogo dovrò costruirmi delle variabili globali, con le quali 'giocherò' con if e for.
+ detto in maiera più umana:
+
+ 0 - ripasso la teoria dalle slide
+ 1 - definisco delle variabili globali, il plurale è dovuto al fatto che nel momento in cui le stamperò in pagina aumenteranno
+ 2 - commento una variabile let x vuota '' per poterla stampare dopo in pagina
+ 3 - costruisto con il for la mia sequenza di numeri da 1 a 100 stampata in console
+ 4 - cerco di capire come modificare i multipli/divisori. al momento credo che una determinante sia che x/y=z e non z.numeri 
+ 5 - verosimilmente qualcosa come un if e un else if annidati nel for che mi dica quando la divisione dei miei altri valori sia un numero intero, allora lo chiamerò fizz/buzz/fizzbuzz
+ 6 - posso in alternativa creare una variabile i che segua i multipli di tre? 
+ 7 - in mezzo a questi andrò a controllare la lazione :) sarà una lunga giornata :')
+  
+ */
+
+const numbers = 'sequenza numeri da 1 a 100'; //in realtà non ne avrei bisogno per stampare in pagina
+
+// let myNumber = '';
+
+for (let i = 1; i <= 100; i++) {
+    console.log(i)
+}
