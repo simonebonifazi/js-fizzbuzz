@@ -21,37 +21,22 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 /*
  percorso logico:
  per scrivere questo codice mi avvalgo in priimo luogo di js, per questo parto da qui anzichè dalla grafica come l'ultimo esercizio.
- in primo luogo dovrò costruirmi delle variabili globali, con le quali 'giocherò' con if e for.
- detto in maiera più umana:
 
  0 - ripasso la teoria dalle slide
- 1 - definisco delle variabili globali, il plurale è dovuto al fatto che nel momento in cui le stamperò in pagina aumenteranno
- 2 - commento una variabile let x vuota '' per poterla stampare dopo in pagina
- 3 - costruisto con il for la mia sequenza di numeri da 1 a 100 stampata in console
- 4 - cerco di capire come modificare i multipli/divisori. al momento credo che una determinante sia che x/y=z e non z.numeri con modulo =0 quindi
- 5 - verosimilmente qualcosa come un if e un else if annidati nel for che mi dica quando la divisione dei miei altri valori sia un numero intero, allora lo chiamerò fizz/buzz/fizzbuzz
- 6 - posso in alternativa creare una variabile i che segua i multipli di tre? 
- 7 - in mezzo a questi punti andrò a controllare la lazione :) sarà una lunga giornata :')
-  
+ 1 - costruisto con il for la mia sequenza di numeri da 1 a 100 stampata in console
+ 2 - identifico i multipli di 3 e di 5 tramite il modulo i 
+ 3 - li stampo in console come fizz/buzz/fizzbuzz
  */
 
-const numbers = 'sequenza numeri da 1 a 100'; //in realtà non ne avrei bisogno per stampare in pagina
-
-const nOnTree = parseInt(3)
-console.log(nOnTree)
 // let myNumber = '';
 
-//provo a costruirmi una variabile che contenga i divisori di 100 per 3 e per 5
-
-//const dividingThree = for (let i = 1;  ){
-
-//}
-
 for (let i = 1; i <= 100; i++) {
-    let j = 3;
-
-
-    if (i % j == 0); {
+    console.log(i)
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log('fizzbuzz')
+    } else if (i % 5 == 0) {
+        console.log('buzz')
+    } else if (i % 3 == 0) {
         console.log('fizz')
     }
 }
