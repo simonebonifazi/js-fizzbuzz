@@ -20,25 +20,49 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 
 /*
  percorso logico:
- per scrivere questo codice mi avvalgo in priimo luogo di js, per questo parto da qui anzichè dalla grafica come l'ultimo esercizio.
+ per scrivere questo codice mi avvalgo in primo luogo di js, per questo parto da qui anzichè dalla grafica come l'ultimo esercizio.
 
- 0 - ripasso la teoria dalle slide
  1 - costruisto con il for la mia sequenza di numeri da 1 a 100 stampata in console
- 2 - identifico i multipli di 3 e di 5 tramite il modulo i 
+ 2 - identifico i multipli di 3 e di 5 tramite il modulo i
  3 - li stampo in console come fizz/buzz/fizzbuzz
  */
 
 // let myNumber = '';
 
-for (let i = 1; i <= 100; i++) {
+// for (let i = 1; i <= 100; i++) {
 
-    if (i % 3 == 0 && i % 5 == 0) {
-        console.log('fizzbuzz')
-    } else if (i % 5 == 0) {
-        console.log('buzz')
-    } else if (i % 3 == 0) {
+
+
+// sequenza da 1 a 100
+for (let i = 1; i <= 100; i++) {
+    //multipli 3
+    const multiplerOfThree = i % 3 == 0;
+    //multipli 5
+    const multiplerOfFive = i % 5 == 0;
+    //multipli  3 e 5
+    const multiplerOfBoth = i % 3 == 0 && i % 5 == 0;
+    //console.log(i)
+    if (multiplerOfBoth) {
+        console.log('Fizzbuzz')
+    } else if (multiplerOfThree) {
         console.log('fizz')
+    } else if (multiplerOfFive) {
+        console.log('buzz')
     } else {
         console.log(i)
     }
 }
+    /*
+via aletrnativa
+
+if (i % 3 == 0 && i % 5 == 0) {
+ console.log('fizzbuzz')
+} else if (i % 5 == 0) {
+ console.log('buzz')
+} else if (i % 3 == 0) {
+ console.log('fizz')
+} else {
+ console.log(i)
+}
+}
+*/
