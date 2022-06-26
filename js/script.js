@@ -27,42 +27,85 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
  3 - li stampo in console come fizz/buzz/fizzbuzz
  */
 
-// let myNumber = '';
-
-// for (let i = 1; i <= 100; i++) {
+const NumbersList = document.getElementById('numbers-list')
 
 
+let myNumbers = '';
 
 // sequenza da 1 a 100
 for (let i = 1; i <= 100; i++) {
     //multipli 3
-    const multiplerOfThree = i % 3 == 0;
+    const multiplerOfThree = (i % 3 === 0);
     //multipli 5
-    const multiplerOfFive = i % 5 == 0;
+    const multiplerOfFive = (i % 5 === 0);
     //multipli  3 e 5
-    const multiplerOfBoth = i % 3 == 0 && i % 5 == 0;
-    //console.log(i)
+    const multiplerOfBoth = (i % 15 === 0);
+
+    //creo variabile cui assegno valore i per indicare i miei contenuti; per pulire codice sotto;
+    let content = i;
+
     if (multiplerOfBoth) {
-        console.log('Fizzbuzz')
+        content = 'fizz-buzz'
     } else if (multiplerOfThree) {
-        console.log('fizz')
+        content = 'fizz'
     } else if (multiplerOfFive) {
-        console.log('buzz')
-    } else {
-        console.log(i)
+        content = 'buzz'
     }
+
+    myNumbers += `<li class="${content}"> ${content} </li>`
 }
-    /*
+
+NumbersList.innerHTML = myNumbers;
+// for (let i = 1; i <= 100; i++) {
+//     //console.log(i)
+//     //multipli 3
+//     const multiplerOfThree = (i % 3 === 0);
+//     //multipli 5
+//     const multiplerOfFive = (i % 5 === 0);
+//     //multipli  3 e 5
+//     const multiplerOfBoth = (i % 15 === 0);
+
+
+//     if (multiplerOfBoth) {
+//         console.log('Fizzbuzz')
+//         myNumbers += '<li class="fizz-buzz"> FizzBuzz </li>'
+
+//     } else if (multiplerOfThree) {
+//         console.log('fizz')
+//         myNumbers += '<li class="fizz"> Fizz </li>'
+//     } else if (multiplerOfFive) {
+//         console.log('buzz')
+//         myNumbers += '<li class="buzz"> Buzz </li>'
+//     } else {
+//         console.log(i)
+//         myNumbers += `<li> ${i}</li>`
+//     }
+// }
+
+//NumbersList.innerHTML = myNumbers;
+
+
+
+
+
+
+
+
+
+
+
+/*
 via aletrnativa
 
 if (i % 3 == 0 && i % 5 == 0) {
- console.log('fizzbuzz')
+console.log('fizzbuzz')
 } else if (i % 5 == 0) {
- console.log('buzz')
+console.log('buzz')
 } else if (i % 3 == 0) {
- console.log('fizz')
+console.log('fizz')
 } else {
- console.log(i)
+console.log(i)
 }
-}
+
 */
+
